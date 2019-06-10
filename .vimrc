@@ -18,6 +18,11 @@ Plugin 'gmarik/Vundle.vim'
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'lilydjwg/colorizer' " colorizes each variable individually
+Plugin 'sirver/ultisnips' " adds useful snippets with tab completion
+Plugin 'honza/vim-snippets' " more snippets
+Plugin 'easymotion/vim-easymotion' " shortens vim motion commands
+
 
 " ...
 
@@ -34,6 +39,10 @@ nnoremap <C-H> <C-W><C-H>
 "split settings for new screen
 set splitbelow
 set splitright
+
+"natural scrolling"
+nnoremap j gj
+nnoremap k gk
 
 "automatic indents
 set autoindent
